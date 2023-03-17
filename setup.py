@@ -2,6 +2,10 @@ from setuptools import find_packages, setup
 
 with open("requirements.txt") as f:
     required = f.read().splitlines()
+    
+torch_dependency = "torch==1.9.1+cpu -f https://download.pytorch.org/whl/cu102/torch_stable.html"
+
+required = [torch_dependency] + required
 
 setup(
     name="flair",
