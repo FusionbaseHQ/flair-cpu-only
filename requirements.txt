@@ -1,5 +1,5 @@
 python-dateutil>=2.6.1
-torch==1.9.1+cpu
+https://download.pytorch.org/whl/cpu/torch-1.9.1%2Bcpu-cp39-cp39-linux_x86_64.whl
 gensim>=3.8.0
 tqdm>=4.26.0
 segtok>=1.5.7
