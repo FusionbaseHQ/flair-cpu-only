@@ -1,5 +1,5 @@
 python-dateutil>=2.6.1
-torch>=1.5.0,!=1.8
+torch==1.9.1+cpu -f https://download.pytorch.org/whl/cu102/torch_stable.html
 gensim>=3.8.0
 tqdm>=4.26.0
 segtok>=1.5.7
