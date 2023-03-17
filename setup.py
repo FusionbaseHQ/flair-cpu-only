@@ -3,9 +3,6 @@ from setuptools import find_packages, setup
 with open("requirements.txt") as f:
     required = f.read().splitlines()
     
-torch_dependency = "torch==1.9.1+cpu -f https://download.pytorch.org/whl/cu102/torch_stable.html"
-
-required = [torch_dependency] + required
 
 setup(
     name="flair",
@@ -18,6 +15,9 @@ setup(
     url="https://github.com/flairNLP/flair",
     packages=find_packages(exclude="tests"),  # same as name
     license="MIT",
+    dependency_links=[
+        "https://download.pytorch.org/whl/torch_stable.html",
+    ],
     install_requires=required,
     include_package_data=True,
     python_requires=">=3.7",
